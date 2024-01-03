@@ -1,0 +1,34 @@
+### Set a color
+GET http://localhost:3000/auth/colors/blue12345
+
+### Get the color
+GET http://localhost:3000/auth/colors
+
+### Create a new User
+POST http://localhost:3000/auth/signup
+content-type:application/json
+
+{
+  "email":"test50@test.com",
+  "password":"12345"
+}
+
+# {
+#   "email":"joaquimalberto123@gmail.com",
+#   "password":"123"
+# }
+
+### Sign In as an existing user
+POST http://localhost:3000/auth/signin
+content-type:application/json
+
+{
+  "email":"test@test.com",
+  "password":"12345"
+}
+
+### GET the curretly sign in user
+GET http://localhost:3000/auth/whoami
+
+### Sign Out current User
+POST http://localhost:3000/auth/signout
